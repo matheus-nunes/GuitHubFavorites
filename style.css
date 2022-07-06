@@ -1,0 +1,211 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+:root {
+
+  font-size:62.5%;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --text-color: #303030;
+
+  --hue: 194;
+  --primary-color: hsla(var(--hue), 100%, 63%) 
+}
+
+body {
+
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: #000000;
+}
+body * {
+
+  font-family: var(--ff-primary);
+}
+
+
+
+#app {
+  padding: 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+  
+}
+
+/*a baixo conseguimos deixar uma elemento html desaparecer, mas no screenheader ele funciona*/
+.sr-only{
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1;
+  overflow: hidden;
+  clip: rect(0 0 0);
+  white-space: nowrap;
+  border-width: 0;
+
+}
+
+header {
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2.5rem 0;
+}
+
+h1 {
+
+  font-size: 2rem;
+
+  text-transform: uppercase;
+
+}
+
+.Github-Search{
+
+  display: flex;
+  align-items: center;
+
+}
+.container {
+  height: 400px;
+    overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #4A808C;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid ;  /* creates padding around scroll thumb */
+}
+
+.Github-Search input {
+
+  height: 3.2rem;
+  border: 1px solid #06181C;
+  border-radius: .4rem 0 0 .4rem;
+  padding: 0 .8rem;
+  background: #06181C;
+  margin-right: 2rem;
+  color: rgb(175, 173, 173);
+
+}
+
+.Github-Search button{
+
+  border:none;
+  cursor: pointer;
+  background: black;
+}
+
+.Github-Search button:hover {
+
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 2rem -1rem rgba(0,0,0,0.3);
+  
+}
+
+table * {
+  
+  font-size: 1.4rem;
+  color: #E1E1E6;
+ 
+}
+
+td.user img{
+
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+table th {
+
+  background-color: #043444;
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+  color: white;
+
+}
+
+
+
+table th:first-child{
+
+  border-top-left-radius: 1.2rem;
+
+}
+table th:last-child{
+
+  border-top-right-radius: 1.2rem;
+  
+}
+
+table td {
+
+  padding: 1.5rem;
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+
+  background: #092D38;
+}
+table tr:nth-child(odd) {
+
+  background: #06181C;
+  
+}
+
+td.user {
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+td.user a {
+  text-decoration: none;
+  
+}
+
+td.user a p {
+
+  font-weight: bold;
+
+}
+
+td button.remove {
+  background: none;
+  border: none; 
+  color: red;
+
+  cursor: pointer;
+}
+
+

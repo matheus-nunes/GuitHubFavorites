@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Utilizamos o scrpit no cabeçalho, porque utilizamos o defer-->
+    <script src="js/main.js" type="module" defer></script>
+    <title>GitHubFavorites</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img src="images/Gitfav.png" alt="logo git fav" />
+
+        <div class="Github-Search">
+          <label for="search" class="sr-only"> Usuário do Github</label>
+          <input id="search" type="text" placeholder="Usuário do Github" />
+          <button id="submit"><img src="images/Button.png" alt="" /></button>
+        </div>
+      </header>
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Usuário</th>
+              <th>Repositorios</th>
+              <th>Seguidores</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="user">
+                <img
+                  src="https://github.com/maykbrito.png"
+                  alt="foto de mayk brito"
+                />
+                <a href="https://github.com/maykbrito" target="_blank">
+                  <p>Mayk brito</p>
+                  <span>maykbrito</span>
+                </a>
+              </td>
+              <td class="repositorio">78</td>
+              <td class="seguidores">9465</td>
+              <td><button class="remove">Remover</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+Neste projeto, aprendemos orientação a objeto. Consumo de api. Promessas, com Fetch... Await
